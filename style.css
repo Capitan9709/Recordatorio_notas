@@ -1,0 +1,91 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+a{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[type="text"]{
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(39, 39, 39);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    display: none;
+}
+#tareas{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}
+#tareas>div{
+    border: 1px solid gray;
+    font-size: 25px;
+    padding: 10px;
+    height: 70px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 7px black;
+
+}
+#tareas>div h2{
+    display: inline;
+    font-size: 30px;
+}
+#tareas>div h6{
+    font-size: 10px;
+    color: gray;
+}
+#tareas>div button{
+    font-size: 10px;
+    background-color: rgb(69, 69, 69);
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+#tareas>div .selected{
+    background-color: green;
+    color: white;
+}
+#tareas>div .noselected{
+    background-color: rgb(69, 69, 69);
+    color: gray;
+}
+#tareas>div button:hover{
+    background-color: rgb(39, 39, 39);
+    color: white;
+    cursor: pointer;
+}
+#tareas>div i:first-child{
+    margin-right: 20px;
+}
+#tareas>div #elimina{
+    color: red;
+    float: right;
+}
+#tareas>div #fechas{
+    color: gray;
+}
+#pie{
+    margin-top: 20px;
+    text-align: center;
+}
+#pie a{
+    color: lightgreen;
+}
+.fa-check-circle{
+    color: lightgreen;
+}
+.tachado{
+    color: lightgreen;
+    text-decoration: line-through;
+}

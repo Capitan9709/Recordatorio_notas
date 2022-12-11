@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b796c7785a.js" crossorigin="anonymous"></script>
+    <title>Notas Recordatorios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Proyecto Recordatorios - Luis Moya Prados</h1>
+    <form action="">
+        <input type="text" id="texto" placeholder="¿Qué quieres recordar?">
+        <input type="submit" id="boton" value="Añadir">
+    </form>
+    <hr>
+    <p><i class="fa-solid fa-chart-column"></i> <span id="tareas-pendientes">0</span> Tareas pendientes de un total de <span id="tareas-totales">0</span> | <a id="borrarTodo"><i class="fa-solid fa-xmark"></i> Borrar tareas completadas</a></p>
+    <hr>
+    <div id="tareas">
+        
+    </div>
+    <br>
+    <div id="pie">
+        <p>Desarrollado por Luis Moya Prados</p>
+        <p>Codigo disponible en <a href=""><i class="fa-brands fa-github"></i>GitHub</a></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
